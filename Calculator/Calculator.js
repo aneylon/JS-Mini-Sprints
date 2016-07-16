@@ -1,19 +1,19 @@
-// https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
-// http://www.w3schools.com/jsref/prop_text_value.asp
-// https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML
 
 // BASICS
 
-var getValFromElement = function(elementID){
+var getElementValue = function(elementID){
   // TODO : write function that returns the 'Value' of a specific element
+  return document.getElementById(elementID).value;
 };
 
 var setElementValue = function(elementID, text){
   // TODO : write a funcition that sets the text 'Value' of a specific element
+  document.getElementById(elementID).value = text;
 }
 
 var setElementText = function(elementID, text){
   // TODO : write a function that sets the text of a specified element
+  document.getElementById(elementID).innerHTML = text;
 };
 
 var convertStringToNumber = function(str){
