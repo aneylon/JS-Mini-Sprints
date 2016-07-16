@@ -2,10 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Calculator</title>
   <link href="Calculator.css" rel="stylesheet">
 </head>
 <body>
+  <p>
+    <input id="operandOne" placeholder="Operand One">
+  </p>
+  <p>
+    <input id="operator" placeholder="Operator">
+  </p>
+  <p>
+    <input id="operandTwo" placeholder="Operand Two">
+  </p>
+  <p><button onClick="calculate()">Calculate</button></p>
+  <p><span>Result : </span><span id="result"> ... </span></p>
+  <br>
+
   <script src="Calculator.js"></script>
 </body>
 </html>
